@@ -8,4 +8,6 @@ export const addCreator = createAction<ThingStructure>(thingsActions.addThing);
 export const updateCreator = createAction<ThingStructure>(
   thingsActions.updateThing
 );
-export const deleteCreator = createAction<void>(thingsActions.deleteThing);
+export const deleteCreator = createAction<ThingStructure>(
+  thingsActions.deleteThing
+);
