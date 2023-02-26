@@ -16,5 +16,8 @@ export const thingReducer = createReducer(initialState, (builder) => {
     )
   );
   builder.addCase(ac.addCreator, (state, { payload }) => [...state, payload]);
+  builder.addCase(ac.deleteCreator, (state, { payload }) => {
+    state.filter((item) => item.id !== payload.id);
+  });
   builder.addDefaultCase((state) => state);
 });
