@@ -1,5 +1,5 @@
 import { ThingStructure } from "../models/things";
-import { thingReducer } from "./thing.reducer";
+import { thingReducer } from "./things.reducer";
 import {
   addCreator,
   deleteCreator,
